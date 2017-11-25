@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+	-webkit-transition: all .25s linear;
+	    -moz-transition: all .25s linear;
+	     -ms-transition: all .25s linear;
+	      -o-transition: all .25s linear;
+	         transition: all .25s linear;
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: #F1F1F1;
+	color: #c2c2c2;
+	font-size: 0px;
+}
+.container {
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+}
+header {
+	display: inline-block;
+	color: #c2c2c2;
+}
+.magnifier {
+ 	background-image: url("../img/magnifier.svg");
+ 	background-size: 100% 50%;
+ 	background-repeat: no-repeat;
+ 	width: 10%;
+ 	background-position: center;
+ }
+ .button {
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	background-color: transparent;
+	font-size: 150px;
+	font-weight: 100;
+	border: 0 transparent;
+ 	padding: 0;
+ 	margin: 0 auto;
+ 	height: 20%;
+ 	outline: none;
+ }
+ .search {
+	width: 90%;
+	color: #ec5a62;
+ }
+ .search::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.search::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.search:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.search:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.search:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.search:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.search:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.search:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+
+.column {
+	display: inline-block;
+	width: 30%;
+	font-size: 16px;
+
+}
+.column:not(:first-of-type):not(:last-of-type){
+	margin: 0 5%;
+}
+.column__title {
+	text-transform: uppercase;	
+}
+.column__list {
+	margin: 0;
+	padding: 0;
+}
+.column__list li {
+	border-radius: 5px;
+	list-style-type: none;
+	padding: 2px;
+
+}
+.column__list li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	background: rgba(118, 117, 128, 0.05);
+	color: #c2c2c2;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.column__list li a:hover,
+.column__list li a:focus {
+	background: rgba(118, 117, 128, 0.1);
+	color: #ec5a62;
+	outline:none;
+}
+.column__list li img {
+	width: 50px;
+	vertical-align: middle;
+}
+.column__list--avatars li img {
+	border-radius: 50%;
+}
+
+.column__list li div {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	max-height: 35px;
+	overflow: hidden;
+	width: calc(100% - 50px - 30px - 10px);
+}
